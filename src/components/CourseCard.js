@@ -15,7 +15,9 @@ const CourseCard = (props) => {
 					<h2 className="card-title">{props.title}</h2>
 					<p>{props.description}</p>
 					<div className="card-actions">
+						<a href={`/course/${props.id}`}>
 						<button className="btn btn-primary">View</button>
+						</a>
 					</div>
 				</div>
 			</div>
