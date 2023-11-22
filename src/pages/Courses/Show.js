@@ -33,7 +33,7 @@ const CourseShow = () => {
 
 	return (
 		<>
-            <CourseInfo title={course.title} description={course.description} />
+            <CourseInfo title={course.title} description={course.description} points={course.points} level={course.level} code={course.code}/>
 		</>
 	);
 };
