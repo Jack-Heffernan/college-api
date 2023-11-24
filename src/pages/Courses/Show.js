@@ -21,6 +21,7 @@ const CourseShow = () => {
                 console.log(response.data)
                 setCourse(response.data.data);
                 
+                
             }
             )
             .catch(error => {
@@ -33,7 +34,7 @@ const CourseShow = () => {
 
 	return (
 		<>
-            <CourseInfo title={course.title} description={course.description} points={course.points} level={course.level} code={course.code}/>
+            <CourseInfo title={course.title} id={course.id} description={course.description} points={course.points} level={course.level} code={course.code}/>
 		</>
 	);
 };
