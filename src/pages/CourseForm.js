@@ -41,93 +41,88 @@ const CourseForm = () => {
 	};
 
 	return (
-		<div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-md shadow-md">
-			<h2 className="text-2xl font-semibold mb-6">Create a Course</h2>
-			<form onSubmit={handleSubmit}>
-				<div className="mb-4">
-					<label
-						htmlFor="title"
-						className="block text-sm font-medium text-gray-600"
-					>
-						Title
-					</label>
-					<input
-						type="text"
-						id="title"
-						name="title"
-						value={course.title}
-						onChange={handleChange}
-						className="mt-1 p-2 w-full border rounded-md"
-						required
-					/>
-				</div>
-				<div className="mb-4">
-					<label className="block text-sm font-medium text-gray-600">
-						Code
-					</label>
-					<input
-						type="text"
-						id="code"
-						name="code"
-						value={course.code}
-						onChange={handleChange}
-						className="mt-1 p-2 w-full border rounded-md"
-						required
-					/>
-				</div>
-				<div className="mb-4">
-					<label
-						htmlFor="description"
-						className="block text-sm font-medium text-gray-600"
-					>
-						Description
-					</label>
-					<textarea
-						id="description"
-						name="description"
-						value={course.description}
-						onChange={handleChange}
-						rows="4"
-						className="mt-1 p-2 w-full border rounded-md"
-						required
-					></textarea>
-				</div>
-				<div className="mb-4">
-					<label className="block text-sm font-medium text-gray-600">
-						Points
-					</label>
-					<input
-						type="text"
-						id="points"
-						name="points"
-						value={course.points}
-						onChange={handleChange}
-						className="mt-1 p-2 w-full border rounded-md"
-						required
-					/>
-				</div>
-				<div className="mb-4">
-					<label className="block text-sm font-medium text-gray-600">
-						Level
-					</label>
-					<input
-						type="text"
-						id="level"
-						name="level"
-						value={course.level}
-						onChange={handleChange}
-						className="mt-1 p-2 w-full border rounded-md"
-						required
-					/>
-				</div>
-				<button
-					type="submit"
-					className="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"
-				>
-					Create Course
-				</button>
-			</form>
-		</div>
+            <div className="max-w-md w-full p-6 bg-white rounded-md shadow-md ">
+                <h2 className="text-2xl font-semibold mb-6">Create a Course</h2>
+                <form onSubmit={handleSubmit}>
+                    <div className="mb-4">
+                        <label htmlFor="title" className="block text-sm font-medium text-gray-600">
+                            Title
+                        </label>
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            value={course.title}
+                            onChange={handleChange}
+                            className="mt-1 p-2 w-full border rounded-md"
+                            required
+                        />
+                    </div>
+                    <div className="mb-4">
+                        <label htmlFor="code" className="block text-sm font-medium text-gray-600">
+                            Code
+                        </label>
+                        <input
+                            type="text"
+                            id="code"
+                            name="code"
+                            value={course.code}
+                            onChange={handleChange}
+                            className="mt-1 p-2 w-full border rounded-md"
+                            required
+                        />
+                    </div>
+                    <div className="mb-4">
+                        <label htmlFor="description" className="block text-sm font-medium text-gray-600">
+                            Description
+                        </label>
+                        <textarea
+                            id="description"
+                            name="description"
+                            value={course.description}
+                            onChange={handleChange}
+                            rows="4"
+                            className="mt-1 p-2 w-full border rounded-md"
+                            required
+                        ></textarea>
+                    </div>
+                    <div className="mb-4">
+                        <label htmlFor="points" className="block text-sm font-medium text-gray-600">
+                            Points
+                        </label>
+                        <input
+                            type="text"
+                            id="points"
+                            name="points"
+                            value={course.points}
+                            onChange={handleChange}
+                            className="mt-1 p-2 w-full border rounded-md"
+                            required
+                        />
+                    </div>
+                    <div className="mb-4">
+                        <label htmlFor="level" className="block text-sm font-medium text-gray-600">
+                            Level
+                        </label>
+                        <input
+                            type="text"
+                            id="level"
+                            name="level"
+                            value={course.level}
+                            onChange={handleChange}
+                            className="mt-1 p-2 w-full border rounded-md"
+                            required
+                        />
+                    </div>
+                    <button
+                        type="submit"
+                        className="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"
+                    >
+                        Create Course
+                    </button>
+                </form>
+            </div>
+        
 	);
 };
 
