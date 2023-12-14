@@ -24,6 +24,7 @@ const Home = () => {
     }, []);
 
     console.log(courses)
+    console.log(courses)
 
 	let courseCards = courses.map((course, i) => {
         return <CourseCard key={i} id= {course.id} title={course.title} description={course.description} />;
